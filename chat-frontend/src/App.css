@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Open sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.mainChat {
+  border: 5px solid #dddddd;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 8px 16px;
+  color: #7e7e7e;
+  background-color: #ebebeb;
+}
+
+.name > span {
+  color: #bbb;
+}
+
+.nameForm {
+  display: flex;
+}
+
+.nameInput {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7e7e7e;
+  border: none;
+  margin: 0 12px;
+  outline: none;
+  background-color: #ebebeb;
+}
+
+.conversation {
+  margin: 0;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
+
+.messageLeft, .messageRight {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  font-size: 18px;
+  word-wrap: break-word;
+  border-radius: 20px;
+}
+
+.messageLeft {
+  background-color: #fff;
+  align-self: flex-start;
+  box-shadow: -2px 2px 4px #dcdcdc;
+}
+
+.messageRight {
+  background-color: #d2f2ff;
+  align-self: flex-end;
+  box-shadow: 2px 2px 4px #dcdcdc;
+}
+
+.messageLeft span, .messageRight span {
+  font-style: italic;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.message {
+  margin: 5px 0;
+}
+
+.messageFeedback {
+  list-style: none;
+}
+
+.feedback {
+  font-style: italic;
+  margin: 0;
+  font-size: 14px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.messageForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.messageInput {
+  flex-grow: 1;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  background-color: #fff;
+}
+
+.vDivider {
+  height: 48px;
+  width: 2px;
+  background-color: #f6f6f6;
+}
+
+.sendButton {
+  background-color: white;
+  border: 0;
+}
+
+.sendButton:hover {
+  background-color: #34b2d8;
+}
+
+.flex {
+  display: flex;
+}
+
+.userList {
+  padding: 1em 2em;
+}
+
+.userList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.userList li {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.userList li:hover {
+  background-color: #4fd8f1;
+}
+
+.userList .selected {
+  background-color: #2ba2b7;
+}
+.onlineIndicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #5cb85c; 
+  border-radius: 50%;
+  margin-left: 5px; 
+}
+
+
